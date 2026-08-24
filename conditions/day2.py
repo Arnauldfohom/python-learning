@@ -70,7 +70,7 @@
 # elif score >= 70:
 #     print("Good")
 # elif score >= 60:
-#     print("Pass")
+#    print("Pass")
 # else:
 #     print("Fail")
 
