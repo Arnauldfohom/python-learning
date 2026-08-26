@@ -101,11 +101,12 @@
 # DAY3 MINI-PROJECT ---PASSWORD ANALYSER
 
 password = input("enter your password: ")
-password_lenght = len(password)
+password_length = len(password)
 has_digit = False
 has_uppercase = False
 has_special = False
-print(f"password lenght: {password_lenght}")
+satisfied_criteria = 0
+print(f"password lenght: {password_length}")
 
 for character in password:
     if character.isdigit():
@@ -115,7 +116,23 @@ for character in password:
         has_uppercase = True
     if not character.isalpha() and not character.isdigit():
         has_special = True
-     
+
+if has_digit:
+    satisfied_criteria += 1
+if has_uppercase:
+    satisfied_criteria += 1
+if has_special:
+    satisfied_criteria += 1
+if password_length >= 8:
+    satisfied_criteria += 1
+if password_length < 6:
+    strength = "weak"
+elif password_length >=10:
+    strength = "strong"
+# et peut-être un critère sur la longueur ?
+    
+
+
 print(f"Contains a digit: {has_digit}")
 print(f"Contains an uppercase letter: {has_uppercase}")
 print(f"contain a special character: {has_special}")
