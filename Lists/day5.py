@@ -144,18 +144,18 @@
 #     display_result(num_of_students, high_score, low_score, average, passed_count, failed_count, percentage_who_passed)
 
 # main()
-numbers = [3, 8, 12, 5, 19, 2, 10]
+# numbers = [3, 8, 12, 5, 19, 2, 10]
 
-def find_max(numbers):
+# def find_max(numbers):
 
-    largest = numbers[0]
+#     largest = numbers[0]
 
-    for number in numbers:
+#     for number in numbers:
 
-        if number > largest:
-            largest = number
+#         if number > largest:
+#             largest = number
 
-    return largest
+#     return largest
 
-result = find_max(numbers)
-print(result)
+# result = find_max(numbers)
+# print(result)
