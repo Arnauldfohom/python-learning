@@ -82,8 +82,8 @@ def find_student(students, name):
     for student in students:
         
         if student["name"] == name:
-            print(students["name"])
+            return student
 
-   
+    return None
 
 find_student(students, "John")
