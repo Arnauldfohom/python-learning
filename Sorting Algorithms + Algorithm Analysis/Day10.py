@@ -61,14 +61,32 @@
 #2- Selection Sort
 
 def selection_sort (numbers):
-    for i in range (len(numbers)):
-        min_index = i 
-        for j in range(i+1 , len(numbers)):
-            if numbers[j]< numbers[min_index]:
-                min_index = j
-        numbers[i], numbers[min_index] = numbers[min_index], numbers[i]
+    for i in range (len(numbers)): #i is the position we're currently fixing
+        min_index = i #assume this is the smallest
+        for j in range(i+1 , len(numbers)): # search the remaining elements with j 
+            if numbers[j]< numbers[min_index]: #if with find something, 
+                min_index = j # we updates min_index
+        numbers[i], numbers[min_index] = numbers[min_index], numbers[i] # swap the smallest element with element at i and move to the next position.
     return numbers
 
 numbers = [7, 4, 9, 2, 5]
 
 print(selection_sort(numbers))
+
+
+# Insertion sort- Big O is O(n²)
+
+numbers = [5,3, 8, 1, 2]
+
+def insertion_sort(numbers):
+    for i in range(1, len(numbers)):
+        key = numbers[i]
+        j = i - 1
+
+        while j >= 0 and numbers[j] > key:
+            numbers[j + 1] = numbers[j]
+            j -= 1
+
+        numbers[j + 1] = key
+
+    return numbers
