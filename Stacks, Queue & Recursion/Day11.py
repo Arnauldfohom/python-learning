@@ -54,3 +54,26 @@ stack.append(40)
 stack.pop()
 
 print(stack)
+
+# Stack
+#   ↓
+# LIFO
+#   ↓
+# DFS / Backtracking
+
+# Queue
+#   ↓
+# FIFO
+#   ↓
+# BFS
+
+
+# Recursion
+#   ↓
+# Call Stack
+#   ↓
+# Tree traversal / DFS / Backtracking
+
+
+
+
