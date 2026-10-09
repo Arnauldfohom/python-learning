@@ -212,10 +212,18 @@ attempts = [
 
 print(user_attempts(attempts))
 
+# For dict to add a value: dist[key] = value
+# For set : set.add(value)
+#For list: list.append(value)
 
 
 
-
+# | Task                         | Best structure | Why                                    |
+# | ---------------------------- | -------------- | -------------------------------------- |
+# | Keep login attempts in order | **List**       | Ordered collection, duplicates allowed |
+# | Detect duplicate users       | **Set**        | Fast membership + uniqueness           |
+# | Count attempts per user      | **Dictionary** | `user → count`                         |
+# | Find most frequent user      | **Dictionary** | Stores each user's count               |
 
 
 
